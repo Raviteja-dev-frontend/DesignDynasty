@@ -1,0 +1,400 @@
+/* ===============================
+VARIABLES
+=============================== */
+:root {
+  --primary-color: #2d3752;
+  --secondary-color: #b0884d;
+  --bg-dark: #1a1f30;
+  --bg-light: #ffffff;
+  --text-light: #fff;
+  --text-dark: #2d3752;
+  --hover-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* ===============================
+GLOBAL
+=============================== */
+.projects-page {
+  color: var(--text-light);
+  background-color: #0f1320;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+HERO SECTION
+=============================== */
+.projects-hero {
+  background: linear-gradient(-45deg, var(--primary-color), #1a1f30, #000, var(--primary-color));
+  background-size: 400% 400%;
+  animation: heroGradient 10s ease infinite;
+  text-align: center;
+  padding: 100px 10%;
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.projects-hero h1 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.projects-hero p {
+  color: var(--text-light);
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ===============================
+CATEGORY SECTION
+=============================== */
+.project-categories {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.project-categories h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.category-box {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  .category-box {
+    text-wrap: wrap; /* Enable wrapping only on mobile */
+  }
+}
+.category-box:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+/* ===============================
+FEATURED PROJECTS
+=============================== */
+.featured-projects {
+  background-color: var(--bg-dark);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.featured-projects h2 {
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.project-card {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px var(--hover-shadow);
+}
+
+.project-card img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card h3 {
+  color: var(--secondary-color);
+  margin: 15px 0 10px;
+  min-height: 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #e3e3e3;
+  min-height: 90px;
+}
+
+.view-btn {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* ===============================
+PROCESS SECTION
+=============================== */
+.process-section-2 {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.process-section-2 h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.process-box-2 {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.process-box-2:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+/* ===============================
+TECHNOLOGIES
+=============================== */
+.technologies {
+  background-color: var(--bg-dark);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.technologies h2 {
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tech-box {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tech-box:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* ===============================
+CTA SECTION
+=============================== */
+.projects-cta {
+  background: linear-gradient(-45deg, var(--secondary-color), var(--secondary-color), #000, var(--primary-color));
+  background-size: 400% 400%;
+  animation: heroGradient 10s ease infinite;
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.projects-cta h2 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+.projects-cta p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* ===============================
+COMPLETED PROJECTS
+=============================== */
+.completed-projects {
+  background-color: #efefef;
+  padding: 80px 10%;
+}
+
+.completed-projects .section-title {
+  color: var(--secondary-color);
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.completed-projects .project-card {
+  background-color: var(--bg-dark);
+  border-radius: 15px;
+  transition: 0.35s ease;
+  overflow: hidden;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.completed-projects .project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.completed-projects .project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.completed-projects .project-card:hover .project-img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+}
+
+.completed-projects h5 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.completed-projects p {
+  color: #e3e3e3;
+  font-size: 0.95rem;
+}
+
+.completed-projects .project-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.completed-projects .project-btn:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.08);
+}
+
+/* ===============================
+RESPONSIVE
+=============================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .projects-hero h1,
+  .featured-projects h2,
+  .project-categories h1,
+  .process-section-2 h2,
+  .technologies h2,
+  .projects-cta h2,
+  .completed-projects .section-title {
+    font-size: 2.2rem;
+  }
+
+  .projects-hero p,
+  .projects-cta p {
+    font-size: 1rem;
+  }
+
+  .project-card img,
+  .completed-projects .project-img {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .projects-hero,
+  .project-categories,
+  .featured-projects,
+  .process-section-2,
+  .technologies,
+  .projects-cta,
+  .completed-projects {
+    padding: 60px 5%;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .completed-projects .project-card {
+    max-width: 100%;
+  }
+
+  .completed-projects .project-img {
+    height: 180px;
+  }
+
+  .view-btn {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 321px) {
+  .project-card img,
+  .completed-projects .project-img {
+    height: 160px;
+  }
+
+  .projects-hero h1,
+  .projects-cta h2,
+  .featured-projects h2,
+  .project-categories h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}

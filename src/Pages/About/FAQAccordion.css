@@ -1,0 +1,238 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.timeline-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: white;
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    30deg,
+    #000000,
+    #0e0e0e,
+    #181818,
+    #202020,
+    #292929,
+    #313131,
+    #3b3b3b,
+    #444444,
+    #4d4d4d,
+    #575757,
+    #616161,
+    #6b6b6b
+  );
+  padding: 20px 0;
+}
+
+/* Timeline list */
+.timeline-wrapper ul {
+  position: relative;
+  left: 70px;
+  list-style: none;
+  padding: 20px 0px;
+  margin: 0;
+  border-left: 60px solid MediumSpringGreen;
+  padding-left: 40px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset,
+    rgba(0, 0, 0, 0.3) 0px 3px 0px inset;
+}
+
+/* Timeline items */
+.timeline-wrapper ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Assign colors with nth-of-type (only li counted) */
+.timeline-wrapper ul li:nth-of-type(1) {
+  --itemcolor: red;
+}
+.timeline-wrapper ul li:nth-of-type(2) {
+  --itemcolor: orange;
+}
+.timeline-wrapper ul li:nth-of-type(3) {
+  --itemcolor: yellow;
+}
+.timeline-wrapper ul li:nth-of-type(4) {
+  --itemcolor: lawngreen;
+}
+.timeline-wrapper ul li:nth-of-type(5) {
+  --itemcolor: dodgerblue;
+}
+.timeline-wrapper ul li:nth-of-type(6) {
+  --itemcolor: violet;
+}
+
+/* Circle bullets */
+.timeline-wrapper ul li::before {
+  content: "";
+  position: absolute;
+  left: -75px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: black;
+  border: 5px double var(--itemcolor, white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Numbers inside bullets */
+.timeline-wrapper ul li::after {
+  content: "#1";
+  color: var(--itemcolor, white);
+  position: absolute;
+  left: -75px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Customize numbers for each */
+.timeline-wrapper ul li:nth-of-type(1)::after {
+  content: "#1";
+}
+.timeline-wrapper ul li:nth-of-type(2)::after {
+  content: "#2";
+}
+.timeline-wrapper ul li:nth-of-type(3)::after {
+  content: "#3";
+}
+.timeline-wrapper ul li:nth-of-type(4)::after {
+  content: "#4";
+}
+.timeline-wrapper ul li:nth-of-type(5)::after {
+  content: "#5";
+}
+.timeline-wrapper ul li:nth-of-type(6)::after {
+  content: "#6";
+}
+
+/* Hover effects */
+.timeline-wrapper ul li:hover::before {
+  background: var(--itemcolor);
+  border-color: black;
+  animation: bulletspin 5s linear infinite;
+}
+.timeline-wrapper ul li:hover::after {
+  color: white;
+}
+
+@keyframes bulletspin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Hide inputs */
+.timeline-wrapper ul input {
+  display: none;
+}
+
+/* Label click zone */
+.timeline-wrapper ul li > label {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  right: 0;
+  cursor: pointer;
+}
+
+/* Tooltip */
+.timeline-wrapper ul li > label::before {
+  position: absolute;
+  content: "Default tooltip content";
+  top: -70px;
+  left: -100%;
+  width: 250px;
+  min-height: 200px;
+  padding: 30px 20px;
+  background: var(--itemcolor);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.timeline-wrapper ul li > label::after {
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid var(--itemcolor);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show tooltip when active */
+.timeline-wrapper ul input:checked + li > label::before,
+.timeline-wrapper ul input:checked + li > label::after {
+  opacity: 1;
+  visibility: visible;
+}
+.timeline-wrapper ul input:checked + li > label::before {
+  left: -64%;
+}
+.timeline-wrapper ul input:checked + li > label::after {
+  left: -12%;
+  transform: scale(1);
+}
+
+/* Paragraph text */
+.timeline-wrapper ul li > p {
+  font-size: 12pt;
+  margin: 0;
+  position: relative;
+  transition: 0.2s;
+}
+.timeline-wrapper ul input:checked + li > p {
+  color: var(--itemcolor);
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+/* Responsive */
+@media (max-width: 630px) {
+  .timeline-wrapper ul {
+    width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .timeline-wrapper ul {
+    width: 290px;
+  }
+}

@@ -1,0 +1,316 @@
+.team-page {
+  
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Hero Section with animated gradient */
+.team-hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(-45deg, #2d3752, #000000, #b0884d, #2d3752);
+  background-size: 400% 400%;
+  animation: heroGradient 10s ease infinite;
+  color: #ffffff;
+}
+
+@keyframes heroGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.team-hero h1 {
+   font-family: ui-monospace;
+  font-size: 3rem;
+  margin-bottom: 10px;  
+font-weight: 600;
+  color: #b0884d;
+}
+
+.team-hero p {
+  font-size: 1.1rem;
+  color: #f2f2f2;
+  margin-top: 15px;
+  font-family: serif;
+}
+
+/* About Team */
+.about-team {
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+}
+.about-team h2 {
+  color: #2d3752;
+ font-size: 3rem;
+  font-family: ui-monospace;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about-team p {
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-family: serif;
+}
+
+/* Leadership & Dev Team */
+.leadership-team,
+.dev-team {
+  background-color: #2d3752;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 2%;
+}
+.leadership-team h2,
+.dev-team h2 {
+  color: #b0884d;
+  font-family: ui-monospace;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.team-card {
+  background-color: #1f2539;
+  border-radius: 15px;
+  padding: 10px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(176, 136, 77, 0.4);
+}
+.team-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.team-card h3 {
+  color: #b0884d;
+  margin-bottom: 8px;
+  font-family: ui-monospace;
+}
+.team-card p {
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+/* Design Philosophy */
+.design-philosophy {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5, #ffffff);
+  text-align: center;
+  padding: 80px 10%;
+}
+.design-philosophy h2 {
+  color: #2d3752;
+  font-family: ui-monospace;
+  font-size: 3rem;  
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.design-philosophy p {
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-family: serif;
+}
+
+/* Join Our Team */
+.join-team {
+  background-color: #2d3752;
+  text-align: center;
+  padding: 80px 10%;
+  color: #ffffff;
+}
+.join-team h2 {
+  color: #b0884d;
+  font-family: ui-monospace;
+  font-size: 3rem;  
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.join-team p {
+  color: #f0f0f0;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+.apply-btn {
+  background: linear-gradient(90deg, #b0884d, #2d3752, #b0884d);
+  background-size: 200% 200%;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  animation: buttonShift 4s ease infinite;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.apply-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(176, 136, 77, 0.6);
+}
+@keyframes buttonShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-hero h1 {
+    font-size: 2rem;
+  }
+ @media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards on small screens */
+  }
+}
+}
+/* ---------- Responsive ---------- */
+
+/* Tablets (992px and below) */
+@media (max-width: 991px) {
+  .team-hero h1 {
+    font-size: 2.5rem;
+  }
+  .team-hero p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  .about-team h2,
+  .leadership-team h2,
+  .dev-team h2,
+  .design-philosophy h2,
+  .join-team h2 {
+    font-size: 2.5rem;
+  }
+  .about-team p,
+  .design-philosophy p,
+  .join-team p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .team-card h3 {
+    font-size: 1.3rem;
+  }
+  .team-card p {
+    font-size: 0.9rem;
+  }
+  .apply-btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small tablets / large phones (768px and below) */
+@media (max-width: 768px) {
+  .team-hero h1 {
+    font-size: 2rem;
+  }
+  .team-hero p {
+    font-size: 0.95rem;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .team-card {
+    padding: 15px;
+  }
+  .team-card h3 {
+    font-size: 1.2rem;
+  }
+  .team-card p {
+    font-size: 0.85rem;
+  }
+  .apply-btn {
+    padding: 9px 22px;
+    font-size: 0.9rem;
+  }
+  .design-philosophy,
+  .about-team {
+    padding: 60px 5%;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .team-hero h1 {
+    font-size: 1.6rem;
+  }
+  .team-hero p {
+    font-size: 0.85rem;
+  }
+  .about-team h2,
+  .leadership-team h2,
+  .dev-team h2,
+  .design-philosophy h2,
+  .join-team h2 {
+    font-size: 2rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .team-card {
+    padding: 12px;
+  }
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+  .team-card p {
+    font-size: 0.8rem;
+  }
+  .apply-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+  .design-philosophy,
+  .about-team,
+  .join-team {
+    padding: 50px 5%;
+  }
+}
+
+/* Very small phones (360px and below) */
+@media (max-width: 360px) {
+  .team-hero h1 {
+    font-size: 1.4rem;
+  }
+  .team-hero p {
+    font-size: 0.8rem;
+  }
+  .team-card h3 {
+    font-size: 1rem;
+  }
+  .team-card p {
+    font-size: 0.75rem;
+  }
+  .apply-btn {
+    padding: 7px 18px;
+    font-size: 0.8rem;
+  }
+}

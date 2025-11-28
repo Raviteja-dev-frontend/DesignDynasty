@@ -1,0 +1,252 @@
+/* src/components/AnimatedCards/AnimatedCards.css */
+
+/* MAIN */
+.service_card_main_section {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top left, #f8f8f8, #f3f3f3);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.services-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #caa163, #2d3752);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.5s ease forwards;
+  position: relative;
+  font-family: ui-monospace;
+  animation-delay: 0.3s;
+}
+.services-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #caa163, #2d3752);
+  border-radius: 2px;
+  animation: slideIn 1.5s ease forwards;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(45, 55, 82, 0.1);
+  text-align: center;
+  transition: transform 0.35s cubic-bezier(.2,.9,.3,1), box-shadow 0.35s ease;
+  animation: floatIn 0.9s ease forwards;
+  animation-delay: calc(var(--delay) * 0.12s);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* After entry, slight floating (deferred) */
+.service-card.loaded {
+  animation: softFloat 4s ease-in-out infinite;
+}
+
+/* Hover */
+.service-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 45px rgba(45, 55, 82, 0.25);
+}
+
+/* Hover overlay */
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(202,161,99,0.2), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.service-card:hover::before { opacity: 1; }
+
+/* Icon */
+.service-icon {
+  font-size: 50px;
+  color: #caa163;
+  margin-bottom: 15px;
+  transition: transform 0.35s ease, color 0.35s ease;
+  animation: pulse 2s infinite ease-in-out;
+}
+.service-card:hover .service-icon {
+  color: #2d3752;
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* Text */
+.service-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3752;
+  margin-bottom: 10px;
+}
+.service-card:hover .service-name { color: #400c70; }
+
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: serif;
+}
+
+/* Orbs */
+.service_card_main_section::before,
+.service_card_main_section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: moveOrbs 20s infinite alternate ease-in-out;
+  z-index: 0;
+}
+.service_card_main_section::before {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #caa163 0%, transparent 70%);
+  top: -100px; left: -150px;
+}
+.service_card_main_section::after {
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, #2d3752 0%, transparent 70%);
+  bottom: -100px; right: -150px;
+}
+
+/* Animations */
+@keyframes floatIn { 0% { opacity:0; transform: translateY(40px) scale(.98);} 100% { opacity:1; transform: translateY(0) scale(1);} }
+@keyframes softFloat { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-6px);} }
+@keyframes pulse { 0%,100% { transform: scale(1);} 50% { transform: scale(1.08);} }
+@keyframes moveOrbs { 0% { transform: translate(0,0) scale(1);} 50% { transform: translate(50px,-30px) scale(1.2);} 100% { transform: translate(-30px,40px) scale(1);} }
+@keyframes fadeIn { 0% { opacity:0; transform: translateY(-30px);} 100% { opacity:1; transform: translateY(0);} }
+@keyframes slideIn { 0% { width:0; opacity:0;} 100% { width:80px; opacity:1;} }
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .services-title { font-size: 2.8rem; }
+  .service_card_main_section { padding: 45px 10px; }
+}
+@media (max-width: 768px) {
+  .services-title { font-size: 2.2rem; }
+  .service-icon { font-size: 42px; }
+}
+@media (max-width: 576px) {
+  .service_card_main_section .row { --bs-gutter-x: 5px !important; --bs-gutter-y: 5px !important; }
+  .service_card_main_section { padding: 20px 0; }
+  .service-card { padding: 15px 8px; }
+  .service-icon { font-size: 38px; }
+  .service-description { font-size: 0.9rem; }
+  .services-title { font-size: 1.6rem; margin-bottom: 40px; }
+  /* reduce blur on small screens */
+  .service_card_main_section::before,
+  .service_card_main_section::after { filter: blur(40px); }
+  /* touch feedback */
+  .service-card:active { transform: scale(.98); }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+/* ==========================
+   MAIN SECTION
+========================== */
+.service_card_main_section {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top left, #f8f8f8, #f3f3f3);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #caa163, #2d3752);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.5s ease forwards;
+  font-family: ui-monospace;
+}
+
+/* ==========================
+   CARD STYLING
+========================== */
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(45, 55, 82, 0.1);
+  transition: all 0.4s ease;
+  animation: floatIn 0.9s ease forwards, softFloat 4s ease-in-out infinite;
+  animation-delay: calc(var(--delay) * 0.2s);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 45px rgba(45, 55, 82, 0.25);
+}
+
+/* Icon */
+.service-icon {
+  font-size: 50px;
+  color: #caa163;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Text */
+.service-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3752;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ==========================
+   MOBILE FIX (2 cards per row)
+========================== */
+@media (max-width: 576px) {
+  .service_card_main_section .col-6 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .service-card {
+    padding: 15px 10px;
+  }
+
+  .service-icon {
+    font-size: 38px;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+}

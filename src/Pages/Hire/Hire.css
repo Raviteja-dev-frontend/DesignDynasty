@@ -1,0 +1,328 @@
+.hiring-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* ---------- Hero Section ---------- */
+.hiring-hero {
+  background: linear-gradient(-45deg, #2d3752, #1a2033, #000000, #2d3752);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px 90px;
+}
+
+.hero-title {
+  font-family: ui-monospace;
+  font-size: 3rem;
+  color: #b0884d;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #e9e9e9;
+  max-width: 700px;
+  margin: 10px auto 0;
+  font-family: serif;
+}
+
+.hire-btn {
+  background-color: #b0884d;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hire-btn:hover {
+  background-color: #2d3752;
+  transform: scale(1.05);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------- Why Work With Us ---------- */
+.why-us {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 40px 5%;
+}
+
+.why-us h2 {
+  color: #2d3752;
+  font-family: ui-monospace;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.reason-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(45, 55, 82, 0.15);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.reason-box:hover {
+  transform: translateY(-6px);
+}
+
+.reason-box h3 {
+  color: #b0884d;
+  margin-bottom: 10px;
+  font-family: ui-monospace;
+}
+
+/* ---------- Open Positions ---------- */
+.open-positions {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.open-positions h2 {
+  color: #2d3752;
+  font-family: ui-monospace;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.job-category {
+  margin-bottom: 40px;
+  text-align: left;
+  max-width: 800px;
+  font-family: serif;
+  margin: 0 auto;
+}
+
+.job-category h3 {
+  color: #b0884d;
+  margin-bottom: 10px;
+  font-family: ui-monospace;
+}
+
+.job-list {
+  list-style: disc;
+  margin-left: 25px;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ---------- Life at Design Dynasty ---------- */
+.life-at {
+  background-color: #2d3752;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 5%;
+}
+
+.life-at h2 {
+  color: #b0884d;
+  font-family: ui-monospace;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.life-img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  height: 300px;
+  object-fit: cover;
+}
+
+.life-img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Apply Section ---------- */
+.apply-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.apply-section h2 {
+  color: #2d3752;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.apply-section p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: linear-gradient(90deg, #2d3752, #b0884d);
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.07);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+  .hero-title { font-size: 3rem; }
+  .why-us h2, .life-at h2, .open-positions h2 { font-size: 2.4rem; }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2rem; }
+  .life-img { height: 250px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.7rem; }
+  .hero-subtitle { font-size: 0.95rem; }
+  .life-img { height: 220px; }
+}
+/* ---------- Responsive ---------- */
+
+/* Large tablets and below */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .hire-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+
+  .why-us h2, 
+  .life-at h2, 
+  .open-positions h2 {
+    font-size: 2.4rem;
+  }
+
+  .reason-box {
+    padding: 20px;
+  }
+
+  .job-category {
+    padding: 0 10px;
+  }
+
+  .job-list {
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hire-btn {
+    padding: 7px 18px;
+    font-size: 0.9rem;
+  }
+
+  .life-img {
+    height: 220px;
+  }
+
+  .reason-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .job-category h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .hire-btn {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+  }
+
+  .why-us h2,
+  .life-at h2,
+  .open-positions h2 {
+    font-size: 2rem;
+  }
+
+  .life-img {
+    height: 180px;
+  }
+
+  .reason-box {
+    padding: 15px;
+  }
+
+  .job-category {
+    padding: 0 5px;
+  }
+
+  .job-list {
+    margin-left: 15px;
+  }
+
+  .cta-btn {
+    padding: 10px 25px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Very small phones (below 360px) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .hire-btn,
+  .cta-btn {
+    padding: 6px 18px;
+    font-size: 0.8rem;
+  }
+
+  .life-img {
+    height: 150px;
+  }
+
+  .reason-box h3,
+  .job-category h3 {
+    font-size: 1.1rem;
+  }
+}

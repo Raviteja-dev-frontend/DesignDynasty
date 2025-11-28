@@ -1,0 +1,51 @@
+/* === Global Styles for Design Dynasty === */
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap");
+
+/* Reset */
+* {
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "serif";
+  background-color: #f8f9fa; /* light background */
+  color: #212529; /* Bootstrap text color */
+   overflow-x: hidden;
+}
+
+/* Add spacing between sections */
+section {
+  padding: 60px 0;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: ui-monospace;
+
+  font-weight: 700;
+  color: #0d0d0d;
+}
+p {
+ font-family: serif;
+}
+
+/* Buttons */
+.btn-custom {
+  background: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #1e90ff;
+  transform: translateY(-2px);
+}
+

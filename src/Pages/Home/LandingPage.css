@@ -1,0 +1,1222 @@
+/* ========== About Section ========== */
+.About-Design-Dynasty_Choose {
+  width: 90% !important;
+  padding: 30px 0 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.About-Design-Dynasty_Choose-img {
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.About-Design-Dynasty_Choose-content {
+  padding: 20px;
+}
+
+.About-Design-Dynasty_Choose-title {
+  font-family: ui-monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  background: radial-gradient(circle, #caa163, #2d3752);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.About-Design-Dynasty_Choose-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #5d5d5d;
+  margin-bottom: 20px;
+  padding-left: 30px;
+   font-family: ui-monospace;
+}
+
+.About-Design-Dynasty_Choose-desc {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-family: serif;
+}
+
+.About-Design-Dynasty_Choose-btn {
+  background: radial-gradient(circle, #caa163, #2d3752);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 30px;
+  color: #fff !important;
+  cursor: pointer;
+  background-size: 200% 200%;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(45, 55, 82, 0.3);
+}
+
+.About-Design-Dynasty_Choose-btn:hover {
+  animation: shimmer 1.5s linear infinite;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(64, 12, 112, 0.4);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ========== Benefits Section ========== */
+.benefits-section {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  font-family: ui-monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3752;
+}
+.benefit-card {
+  background: #ffffff;
+  border-radius: 14px;
+  min-height: 180px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+.benefits-desc {
+  max-width: 850px;
+  margin: 10px auto 40px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+.benefit-icon {
+  font-size: 2rem;
+  color: #caa163;
+  margin-bottom: 15px;
+}
+
+.benefit-title {
+   font-family: ui-monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3752;
+}
+
+/* ========== Responsive Design ========== */
+/* 🟣 small laptop (≤ 1202px) */
+@media (max-width: 1281px) {
+.benefit-card {
+  background: #ffffff;
+  border-radius: 14px;
+  height: 200px !important;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+}
+@media (max-width: 500px) {
+.benefit-card {
+  background: #ffffff;
+  border-radius: 14px;
+  height: 200px !important;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+}
+/* 🟣 Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .About-Design-Dynasty_Choose {
+    padding: 50px 0;
+    width: 90% !important;
+  }
+
+  .About-Design-Dynasty_Choose-title {
+    font-size: 2.8rem;
+    padding-left: 15px;
+  }
+
+  .About-Design-Dynasty_Choose-subtitle {
+    font-size: 1.4rem;
+    padding-left: 15px;
+  }
+
+  .About-Design-Dynasty_Choose-desc {
+    font-size: 0.95rem;
+    padding-left: 15px;
+  }
+
+  .About-Design-Dynasty_Choose-btn {
+    margin-left: 15px;
+  }
+
+  .benefit-card {
+    padding: 25px 10px;
+  }
+
+  .benefit-icon {
+    font-size: 1.8rem;
+  }
+  .benefits-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 10px!important;
+   }
+
+}
+
+/* 🟠 Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .About-Design-Dynasty_Choose {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .About-Design-Dynasty_Choose-title,
+  .About-Design-Dynasty_Choose-subtitle,
+  .About-Design-Dynasty_Choose-desc {
+    padding-left: 0;
+  }
+
+  .About-Design-Dynasty_Choose-title {
+    font-size: 2rem;
+  }
+
+  .About-Design-Dynasty_Choose-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .About-Design-Dynasty_Choose-btn {
+    margin-left: 0;
+  }
+
+  .benefits-desc {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+
+}
+
+/* 🔵 Extra Small (≤ 480px) */
+@media (max-width: 480px) {
+  .About-Design-Dynasty_Choose-title {
+    font-size: 1.6rem;
+  }
+
+  .About-Design-Dynasty_Choose-subtitle {
+    font-size: 1rem;
+  }
+
+  .About-Design-Dynasty_Choose-desc {
+    font-size: 0.9rem;
+  }
+
+  .About-Design-Dynasty_Choose-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+
+
+  .benefit-icon {
+    font-size: 1.6rem;
+  }
+
+  .benefit-title {
+    font-size: 1rem;
+  }
+  .benefits-section .section-title {
+    font-size: 1.6rem !important;
+    font-weight: 700;
+    padding-top: 15px;
+  }
+
+}
+
+  
+
+
+/* Section Wrapper */
+.whyChooseUs {
+  padding: 60px 0;
+  background-color: #caa163;
+}
+
+/* Section Title */
+.whyChooseUs .section-title {
+   
+    font-size: 3rem;
+  font-weight: 700;
+  color: #f4f7f9;
+  margin-bottom: 20px;
+}
+
+.whyChooseUs .section-subtitle {
+  font-size: 1.05rem;
+  color: #1c0c0c;
+  line-height: 1.6;
+}
+
+/* Cards */
+.choose-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.choose-icon {
+  font-size: 2.2rem;
+  color: #caa163;
+  margin-bottom: 15px;
+}
+
+.choose-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.choose-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.why-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #2d3752;
+  font-weight: 500;
+}
+
+.why-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px; /* adjust to align vertically */
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #fffefb, #2d3752);
+  border-radius: 50%; /* makes it a disk */
+}
+
+
+
+/* GIF Section */
+.gif-section {
+  background: #f9f9ff;
+  border-radius: 25px;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.gif-section img {
+  max-width: 100%;
+  
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  .choose-card {
+    padding: 20px 10px;
+  }
+
+  .choose-card h5 {
+    font-size: 1rem;
+  }
+
+  .choose-card p {
+    font-size: 0.85rem;
+  }
+
+  .choose-icon {
+    font-size: 1.8rem;
+  }
+  .whyChooseUs .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+  font-weight: 700;
+  color: #f4f7f9;
+  margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .whyChooseUs .section-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyChooseUs .section-title {
+    font-size: 2rem;
+  }
+}
+
+.whyChooseUs {
+  padding: 30px 10px;
+  background-color: #caa163;
+}
+
+}
+
+
+
+
+
+/* =========================
+   Process Section Styling
+========================= */
+/* Section base */
+.process-section {
+ background-color: white !important;
+  position: relative;
+  width:90%;
+  margin: 0px auto;
+  
+}
+
+/* Title */
+.process-section .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: ui-monospace;
+  margin-bottom: 30px;
+
+  background: linear-gradient(90deg, #caa163, #2d3752);
+
+  /* Standard property first */
+  background-clip: text;
+  color: transparent;
+
+  /* Vendor-prefixed for Chrome & Safari */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Process steps container */
+.process-steps {
+  border-left: 3px solid #caa163;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+/* Each step */
+.process-step {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  gap: 8px;
+}
+
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, #caa163, #2d3752);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(202, 161, 99, 0.6);
+}
+
+/* Step title */
+.process-step h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3752;
+  margin-bottom: 8px;
+  font-family: serif;
+}
+
+/* Step description */
+.process-step p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: serif;
+}
+
+/* Right image */
+.office-image {
+  border-radius: 16px; /* smoother rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* soft shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 100%;
+ 
+  height: 500px !important;
+}
+
+.office-image:hover {
+  transform: scale(1.05) rotate(-1deg); /* slight zoom with tilt */
+  box-shadow: 0 12px 25px rgba(45, 55, 82, 0.4),
+              0 0 20px #caa163; /* theme glow */
+}
+
+.benefits-section {
+  background: linear-gradient(
+    120deg,
+    #f9f9fb 0%,
+    #caa163 40%,
+    #2d3752 100%
+  );
+  padding: 60px 0;
+  color: #fff; /* ensures text readable */
+}
+@media (max-width: 576px) {
+/* Right image */
+.office-image {
+  height: 250px !important;
+}
+.process-section .section-title {
+  font-size: 1.5rem !important;
+}
+}
+@media (max-width: 900px) {
+.process-section .section-title {
+  font-size: 2.8rem;
+  padding-left: 0px;
+}
+.process-step {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 0px;
+  gap: 8px;
+}
+}
+.contact-title-5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+
+  background: linear-gradient(90deg, #2d3752, #5a189a, #caa163);
+
+  /* Standard property first */
+  background-clip: text;
+  color: transparent;
+
+  /* Vendor-prefixed for Chrome & Safari */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px !important;
+}
+
+
+.contact-form-section-5 p {
+  color: #666;
+  font-size: 1.1rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.benefits-section .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d3752;
+  margin-bottom: 20px;
+    font-family: ui-monospace;
+}
+
+.benefits-desc {
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #080808;
+  line-height: 1.6;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border-radius: 14px;
+  height: 150px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(45, 55, 82, 0.2);
+}
+
+.benefit-icon {
+  font-size: 2.2rem;
+  color: #caa163; /* theme accent */
+  margin-bottom: 12px;
+}
+
+.benefit-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3752;
+    font-family: ui-monospace;
+}
+
+
+.testimonials-clients-section {
+  background: #fff;
+  color: #222;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0073e6;
+    font-family: ui-monospace;
+}
+
+/* Testimonials */
+.testimonials-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: serif;
+}
+
+.testimonial-card {
+   background: linear-gradient(
+    120deg,
+    #caa163 20%,
+    #2d3752 100%
+  );
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card h5 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.testimonial-card p {
+  color: #030303;
+  margin-bottom: 10px;
+  font-family: serif;
+}
+
+
+
+
+/* =============================== */
+/* CONTACT SECTION STYLES */
+/* =============================== */
+.contact-clients-section {
+  background: linear-gradient(
+    90deg,
+    #d5b777 0%,
+    #f3e7c6 25%,
+    #c7cbd5 50%,
+    #1f2638 100%
+  );
+  padding: 20px 0 0px 0px;
+ font-family: ui-monospace;;
+}
+
+/* Left Section */
+.contact-info {
+  padding: 40px;
+  text-align: left;
+}
+
+.contact-brand {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+
+  background: linear-gradient(90deg, #2d3752, #5a5959);
+
+  /* Standard property first */
+  background-clip: text;
+  color: transparent;
+
+  /* Vendor-prefixed for Chrome/Safari */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.contact-heading {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #2d2d2d;
+   font-family: ui-monospace;
+}
+
+.contact-heading .highlight {
+  color: #e5e3e0;
+  font-size: 2rem;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-orange {
+  background: linear-gradient(135deg, #caa163, #e6c87f);
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background: linear-gradient(135deg, #b8974d, #d4b56d);
+  transform: translateY(-3px);
+}
+
+.btn-blue {
+  background: linear-gradient(135deg, #2d3752, #181b2b);
+  color: #fff !important;
+}
+
+.btn-blue:hover {
+  background: linear-gradient(135deg, #1f2538, #3d4569);
+  transform: translateY(-3px);
+}
+
+/* Contact Form */
+.contact-form-1 {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.contact-form-1 input,
+.contact-form-1 textarea {
+  width: 100%;
+  padding: 2px 15px !important;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.contact-form-1 input:focus,
+.contact-form-1 textarea:focus {
+  border: 1px solid #caa163;
+  box-shadow: 0 0 6px rgba(202, 161, 99, 0.4);
+}
+
+.contact-form-1 button.contact-btn {
+  background: linear-gradient(135deg, #caa163, #e6c87f);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form-1 button.contact-btn:hover {
+  background: linear-gradient(135deg, #b8974d, #d4b56d);
+  transform: translateY(-3px);
+}
+
+/* =============================== */
+/* RESPONSIVE DESIGN */
+/* =============================== */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .contact-clients-section {
+    background: linear-gradient(180deg, #caa163 0%, #2d3752 100%);
+  }
+
+  .contact-info {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .contact-brand {
+    font-size: 2.8rem;
+  }
+
+  .contact-heading {
+    font-size: 1.2rem;
+  }
+
+  .contact-buttons {
+    justify-content: center;
+  }
+
+  .contact-form-5 {
+    margin-top: 40px;
+  }
+}
+/* Wrapper */
+.form-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  border: 1px solid rgba(202, 161, 99, 0.2);
+}
+
+.form-box:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3752;
+  margin-bottom: 10px;
+}
+
+.form-sub {
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* Form UI */
+.form-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-ui input,
+.form-ui textarea {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.form-ui input:focus,
+.form-ui textarea:focus {
+  border-color: #caa163;
+  box-shadow: 0 0 6px rgba(202, 161, 99, 0.3);
+  background: #fff;
+}
+
+/* Button */
+.send-btn {
+  background: linear-gradient(135deg, #caa163, #e6c87f);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #b8974d, #d4b56d);
+  transform: translateY(-2px);
+}
+
+/* Success Message */
+.sent-msg {
+  color: green;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 25px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-ui input,
+  .form-ui textarea {
+    font-size: 0.9rem;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .contact-clients-section {
+    padding: 0px 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .contact-brand {
+    font-size: 1.6rem;
+  }
+
+  .contact-heading {
+    font-size: 1.1rem;
+  }
+
+  .contact-heading .highlight {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button.contact-btn {
+    width: 100%;
+  }
+}
+
+/* Remove vertical padding on small screens */
+@media (max-width: 576px) {
+  .contact-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .contact-form-section {
+    padding: 0px 10% !important;
+}
+}
+
+
+.client-review-section {
+  background: rgba(45, 55, 82, 0.27);
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.review-title {
+  padding-top: 30px;
+  font-family: ui-monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  background: radial-gradient(circle, #caa163, #2d3752, #caa163);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  /* Vendor-prefixed for Chrome/Safari */
+  
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: gradientMove 4s ease-in-out infinite alternate;
+}
+
+/* ===========================
+   📱 RESPONSIVE FIXES
+   =========================== */
+@media (max-width: 992px) {
+  .review-title {
+    font-size: 2.5rem;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-title {
+    font-size: 2rem;
+    padding-left: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .review-title {
+    font-size: 1.7rem;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .review-title {
+    font-size: 1.4rem;
+    padding-left: 5px;
+    letter-spacing: 0.5px;
+  }
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
+
+
+/* Slick Slider Overrides */
+.review-cards {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.review-card-wrapper {
+  padding: 0 10px;
+  display: flex !important;
+  justify-content: center;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  padding: 25px 20px;
+  color: #2d3752;
+  transition: all 0.3s ease;
+  min-height: 350px;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.review-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+
+.review-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.review-position {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.review-rating {
+  color: #ffd700;
+  font-size: 1rem;
+}
+.review-card {
+  width: 100%; /* let Slick handle width */
+  max-width: 300px;
+  padding: 25px 20px;
+}
+
+@media (max-width: 992px) {
+  .review-card { max-width: 250px; }
+}
+
+@media (max-width: 768px) {
+  .review-card { max-width: 90%; }
+}
+.review-card-wrapper {
+  padding: 0 8px;
+  display: flex !important;
+  justify-content: center;
+}
+
+
+
+
+
+/* ---- Testimonials ---- */
+
+
+.jbc_comments h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center; /* Correct way to center text */
+
+}
+
+
+.sliding-comments {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollTestimonials 20s linear infinite;
+}
+
+@keyframes scrollTestimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ----------- Testimonial Card ----------- */
+.testimonial-card {
+  position: relative;
+  background: radial-gradient(circle at top left, #b0884d 0%, #2d3752 100%);
+  padding: 20px 25px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  color: #fff !important;
+  text-align: left;
+  margin: 20px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: -40px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 40px solid rgba(112, 111, 111, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.testimonial-card:hover::before {
+  opacity: 1;
+}
+.testimonial-card p{
+  color:#ebe7e7;
+}
+/* Optional: Mobile adjustments */
+@media (max-width: 576px) {
+  .testimonial-card {
+    padding: 18px 20px;
+    margin: 15px;
+    width: 200px;
+  }
+
+  .testimonial-card::before {
+    left: -30px;
+    border-right: 30px solid rgba(112, 111, 111, 0.9);
+  }
+}

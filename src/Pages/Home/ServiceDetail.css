@@ -1,0 +1,105 @@
+.service-detail-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #2d3752;
+}
+
+.service-detail-card {
+  background: #f7f7f7;
+  border-radius: 15px;
+  padding: 30px 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.service-detail-icon {
+  font-size: 50px;
+  color: #400c70; /* Deep Violet */
+  margin-bottom: 20px;
+}
+
+.service-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+
+  background: linear-gradient(90deg, #caa163, #400c70);
+  background-clip: text;              /* ✅ Standard property */
+  -webkit-background-clip: text;      /* ✅ For Chrome, Safari */
+  -webkit-text-fill-color: transparent;
+  color: transparent;                 /* Optional: for Firefox */
+}
+
+
+.service-detail-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.service-features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.service-features-list li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #2d3752;
+}
+
+.service-features-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #aa9761, #2d3752f1);
+    border-radius: 50%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #caa163;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #400c70;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-detail-card {
+    padding: 30px 20px;
+  }
+
+  .service-detail-icon {
+    font-size: 40px;
+  }
+
+  .service-detail-title {
+    font-size: 1.7rem;
+  }
+
+  .service-features-list li {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,244 @@
+.OurServices {
+  text-align: center;
+  width: 100%;
+  padding: 60px 40px;
+  background: #2d3752;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  /* margin-bottom: 40px; */
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #d2d2d3, #caa163);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  margin: 12px auto 0;
+  border-radius: 2px;
+  background: linear-gradient(
+    30deg,
+    #f3eeee 0%,
+    #f8f6f6 20%,
+    #caa163 30%,
+    #caa163 70%,
+    #f8f6f6 80%,
+    #f3eeee 100%
+  );
+  background-size: 200% 200%;
+  animation: shineMove 3s linear infinite;
+}
+
+@keyframes shineMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-cards {
+  width: 85%;
+  margin: 0 auto !important;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.hero-card {
+  flex: 1;
+  color: white;
+  border-radius: 20px;
+  padding: 28px;
+  background: #ebe1e1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-header .icon {
+  font-size: 64px;
+  color: #2d3752;
+}
+
+.hero-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: left;
+  color: #caa163;
+}
+
+.hero-card .num {
+  font-size: 60px;
+  font-weight: 600;
+  color: #2d3752a2;
+}
+
+.hero-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.hero-card ul li {
+  padding: 6px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d3752;
+}
+
+.hero-card ul li::before {
+  content: "•";
+  color: #caa163;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Tablet (≤992px): Keep two cards per row */
+@media (max-width: 992px) {
+  .row.hero-cards > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .hero-cards {
+    width: 100%;
+    padding: 15px 0;
+    
+  }
+
+  .hero-card {
+    padding:auto;
+    margin-bottom: 5px;
+    margin: 5px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .hero-card h3 {
+    font-size: 18px;
+  }
+
+  .card-header .icon {
+    font-size: 52px;
+  }
+
+  .hero-card .num {
+    font-size: 52px;
+  }
+}
+
+/* Mobile (≤768px): TWO cards per row */
+@media (max-width: 768px) {
+  .row.hero-cards > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .hero-cards {
+    width: 100%;
+    
+    
+  }
+
+  .hero-card {
+    padding: 20px;
+    margin-bottom: 5px;
+    margin: 5px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-card h3 {
+    font-size: 16px;
+  }
+
+  .hero-card ul li {
+    font-size: 13.5px;
+  }
+
+  .card-header .icon {
+    font-size: 46px;
+  }
+
+  .hero-card .num {
+    font-size: 46px;
+  }
+}
+
+/* Small Mobile (≤480px): still 2 cards but tighter */
+@media (max-width: 480px) {
+  .row.hero-cards > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1px;
+    margin: 0px !important;
+  }
+.OurServices {
+  text-align:left;
+  width: 100%;
+  padding: 0px 0px !important;
+ 
+}
+  .hero-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem !important;
+    text-align: center;
+    
+  }
+
+  .hero-card h3 {
+    font-size: 15px;
+  }
+
+  .hero-card ul li {
+    font-size: 12.5px;
+  }
+
+  .card-header .icon {
+    font-size: 40px;
+  }
+
+  .hero-card .num {
+    font-size: 40px;
+  }
+}

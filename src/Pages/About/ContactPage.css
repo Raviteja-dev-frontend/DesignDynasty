@@ -1,0 +1,233 @@
+/* =========================================
+   GLOBAL RESPONSIVE SIZES
+========================================= */
+:root {
+  --title-size: clamp(1.8rem, 4vw, 3rem);
+  --subtitle-size: clamp(1.4rem, 3vw, 2.2rem);
+  --paragraph-size: clamp(0.95rem, 2vw, 1.2rem);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.contact-hero {
+  text-align: center;
+  padding: clamp(80px, 12vw, 140px) 20px;
+  color: #fff;
+  background: linear-gradient(-45deg, #2d3752, #1a1f30, #b0884d, #2d3752);
+  background-size: 400% 400%;
+  animation: heroShift 12s ease infinite;
+}
+
+@keyframes heroShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contact-hero h1 {
+  font-size: var(--title-size);
+  font-family: ui-monospace;
+  font-weight: 800;
+}
+
+.contact-hero p {
+  font-size: var(--paragraph-size);
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+.contact-form-section {
+  padding:50px;
+  background: #f4f4f4;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: var(--subtitle-size);
+  color: #2d3752;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 20px;
+  border-radius: 25px;
+  border: 1px solid #b0884d;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2d3752;
+  box-shadow: 0 0 4px rgba(45, 55, 82, 0.3);
+}
+
+.contact-btn {
+  background: linear-gradient(90deg, #2d3752, #b0884d, #2d3752);
+  background-size: 200% 200%;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  animation: buttonShift 4s ease infinite;
+}
+
+@keyframes buttonShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 480px) {
+  .contact-btn { width: 100%; }
+}
+
+/* =========================================
+   CONTACT INFO SECTION
+========================================= */
+.contact-info-section {
+  padding:50px;
+  background: #2d3752;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-info-section h2 {
+  font-size: var(--subtitle-size);
+  margin-bottom: 40px;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.info-box {
+  background: rgba(31, 37, 57, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  background: rgba(31, 37, 57, 1);
+}
+
+/* Social Icons */
+.social-links a {
+  color: #fff;
+  font-size: 1.7rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #b0884d;
+}
+
+/* =========================================
+   MAP SECTION
+========================================= */
+.map-section {
+  padding: 50px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: var(--subtitle-size);
+  margin-bottom: 40px;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: clamp(250px, 40vw, 450px);
+  border: 0;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+.faq-section {
+  padding:50px;
+  background: #2d3752;
+  color: #fff;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: var(--subtitle-size);
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  background: rgba(31, 37, 57, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-item label {
+  display: block;
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #b0884d;
+  position: relative;
+}
+
+.faq-item input { display: none; }
+
+.faq-item label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 1.4rem;
+}
+
+.faq-item input:checked + label::after {
+  content: "-";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 15px;
+}
+
+.faq-item input:checked ~ .faq-answer {
+  max-height: 200px;
+  padding: 15px;
+}
+
