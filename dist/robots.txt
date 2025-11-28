@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary system files
+Disallow: /admin/
+Disallow: /server/
+Disallow: /api/private/
+Disallow: /cgi-bin/
+
+# Sitemap locations
+Sitemap: https://designdynasty.in/sitemap.xml
+Sitemap: https://www.designdynasty.in/sitemap.xml
+
+# Force search engines to always use HTTPS
+Host: https://designdynasty.in
